@@ -5,7 +5,7 @@ const NavBar = ()=>{
 
     return(
 
-        <nav>
+        <nav className='navbar'>
             <Link url="/" text="Accueil" modificator="primary" />
             <Link url="/about" text="A Propos" modificator="primary" />
         </nav>

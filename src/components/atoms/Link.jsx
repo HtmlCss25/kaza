@@ -1,17 +1,22 @@
 import React from 'react';
-import {useNavigate} from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 const Link = (props)=>{
 
-    const handleClick = e=>{
-        e.preventDefault();
-        useNavigate(props.url);
+    const location = useLocation()
+
+    const isActive = (path)=>{
+        
+        return location.pathname === path ? 'active' : '';
+
     }
 
     return (
 
-        <a href={props.url} onClick={handleClick} className={`link ${props.modificator ? `link--${props.modificator}` : ''}`}>{props.text}</a>
+        <a href={props.url} className={`link ${isActive(props.url)}`}>{props.text}</a>
 
     )
 
 }
+
+export default Link;

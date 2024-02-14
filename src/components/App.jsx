@@ -1,24 +1,29 @@
 // App.js
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import Header from './organism/Header';
+
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
+import Lodging from './pages/Lodging';
+import About from './pages/About';
+import NotFound from './pages/NotFound';
+
+import Header from './organism/Header';
+
+import '../style.scss';
 
 const App = () => {
   return (
-    <Router>
-      <div>
+    <BrowserRouter>
         <Header/>
 
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/lodging" component={Lodging} />
-          <Route path="/about" component={About} />
-          <Route component={NotFound} />
-        </Switch>
-      </div>
-    </Router>
+        <Routes>
+          <Route path="/" exact element={<Home/>} />
+          <Route path="/lodging" element={<Lodging/>} />
+          <Route path="/about" element={<About/>} />
+          <Route element={<NotFound/>} />
+        </Routes>
+    </BrowserRouter>
   );
 };
 

@@ -1,15 +1,13 @@
 import React from 'react';
-import Background from '../../images/background.png';
+import Image from '../atoms/Image';
 
-const Banner = ()=>{
+const Banner = (props)=>{
 
     return(
 
         <figure className='banner'>
-
-            <img src={Background} alt="Paysage avec falaise et étendue d'eau"/>
-            <figcaption>Chez vous, partout et ailleurs</figcaption>
-
+            <Image source={props.background} alt = "Paysage avec falaise et étendue d'eau"/>
+            <figcaption>{props.text}</figcaption>
         </figure>
 
 

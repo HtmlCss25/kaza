@@ -17,7 +17,7 @@ const CardContainer = ()=>{
 
             {
                 cards.map(props=>(
-                    <Card key={props.id} title={props.title} cover={props.cover} />
+                    <Card key={props.id} title={props.title} cover={props.cover} id={props.id} />
                 ))
             }
             

@@ -1,14 +1,15 @@
 import React from 'react';
 import CardTitle from '../atoms/CardTitle'
+import Image from '../atoms/Image';
 
-const Card = (props)=>{
+const Card = ({id,cover,title})=>{
 
     return(
 
-        <a href="/lodging" className='card-link'>
+        <a href={`/lodging/${id}`} className='card-link'>
             <article className='card'>
-                <img src={props.cover} alt="Aperçu du logement" />
-                <CardTitle title = {props.title}/>
+                <Image source={cover} alt = "Aperçu du logement"/>
+                <CardTitle title = {title}/>
             </article>
         </a>
 

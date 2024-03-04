@@ -9,6 +9,7 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 
 import Header from './organism/Header';
+import Footer from './organism/Footer';
 
 import '../style.scss';
 
@@ -19,10 +20,15 @@ const App = () => {
 
         <Routes>
           <Route path="/" exact element={<Home/>} />
-          <Route path="/lodging" element={<Lodging/>} />
+          <Route path="/lodging/:id" element={<Lodging/>} />
           <Route path="/about" element={<About/>} />
-          <Route element={<NotFound/>} />
+          
+          <Route path="/lodging/*" element={<NotFound/>} />
+          <Route path="/notFound" element={<NotFound/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
+
+        <Footer/>
     </BrowserRouter>
   );
 };

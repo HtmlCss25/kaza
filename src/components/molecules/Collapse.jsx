@@ -3,6 +3,11 @@ import { useState } from "react";
 import Arrow from "../atoms/Arrow";
 import CollapseContent from "../atoms/CollapseContent";
 
+/**
+ * 
+ * @param {string} props.title - Titre affiché dans le head
+ * @param {string | array} props.content - contenu : p si type string / ul li si array
+ */
 
 const Collapse = (props)=>{
 

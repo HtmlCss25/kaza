@@ -19,7 +19,7 @@ const Lodging = ()=>{
     
     useEffect(()=>{
         if(!lodgingData){
-            navigate('/notFound')
+            navigate('/notFound');
         }
     })
     

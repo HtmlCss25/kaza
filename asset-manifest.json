@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/kaza/static/css/main.6a4f2bf4.css",
+    "main.js": "/kaza/static/js/main.42f5e56f.js",
+    "static/js/592.579b49ac.chunk.js": "/kaza/static/js/592.579b49ac.chunk.js",
+    "static/media/background2.png": "/kaza/static/media/background2.dc7a08e1faa2e14de0bd.png",
+    "static/media/background.png": "/kaza/static/media/background.1168be13650bb18b456e.png",
+    "index.html": "/kaza/index.html",
+    "main.6a4f2bf4.css.map": "/kaza/static/css/main.6a4f2bf4.css.map",
+    "main.42f5e56f.js.map": "/kaza/static/js/main.42f5e56f.js.map",
+    "592.579b49ac.chunk.js.map": "/kaza/static/js/592.579b49ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a4f2bf4.css",
+    "static/js/main.42f5e56f.js"
+  ]
+}

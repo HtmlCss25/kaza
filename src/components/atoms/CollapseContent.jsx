@@ -7,7 +7,7 @@ const CollapseContent = (props)=>{
         <div className='content'>
             {Array.isArray(props.content) ? 
                 <ul>
-                    {props.content.map((item,index)=><li key={index}>{item}</li>)}
+                    {props.content.map((item,index)=><li key={index+"-"+item}>{item}</li>)}
                 </ul> 
             : 
                 <p>{props.content}</p>

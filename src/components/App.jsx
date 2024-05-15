@@ -3,6 +3,7 @@
 import React from 'react';
 
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
+// import {createHashRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Home from './pages/Home';
 import Lodging from './pages/Lodging';
 import About from './pages/About';
@@ -15,7 +16,7 @@ import '../style.scss';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header/>
 
         <Routes>

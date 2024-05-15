@@ -18,7 +18,7 @@ const About = ()=>{
 
             <section className='collapse-section'>
                 {datas.map(data=>(
-                    <Collapse title ={data.title} content={data.content}/>
+                    <Collapse title ={data.title} content={data.content} key={data.content+"-"+data.title}/>
                 ))}
             </section>
 

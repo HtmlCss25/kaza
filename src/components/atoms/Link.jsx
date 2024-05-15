@@ -1,20 +1,13 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const Link = (props)=>{
 
-    const location = useLocation()
-
-    const isActive = (path)=>{
-        
-        return location.pathname === path ? 'active' : '';
-
-    }
-
     return (
 
-        <a href={props.url} className={`link ${isActive(props.url)}`}>{props.text}</a>
+        <NavLink to={props.url} className="link">{props.text}</NavLink>
+        // {/* <a href={props.url} className={`link ${isActive(props.url)}`}>{props.text}</a> */}
 
     )
 
